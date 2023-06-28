@@ -81,10 +81,10 @@ new Vue({
     },
     methods: {
       calcularPrecioPesos: function(precioDolares) {
-        return this.dolarVenta * precioDolares;
+        return (this.dolarVenta * precioDolares).toFixed(2);
       },
       calcularPrecioMayorista: function(precioDolares) {
-        return this.calcularPrecioPesos(precioDolares) * 0.7; // 30% de descuento para precio mayorista
+        return (this.calcularPrecioPesos(precioDolares) * 0.7).toFixed(2); // 30% de descuento para precio mayorista
       },
       calcularTotalPedido: function() {
         // Se calcula automáticamente a través de la propiedad computada 'totalPedido'
