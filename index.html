@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tu página web</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="images/logo.jpg" alt="Logo de la marca" class="logo">
+    </div>
+  </header>
+  
+  <main>
+    <div id="app" class="container">
+      <h1>Productos <span class="subtitulo">Compra mínima Mayorista: $ {{ calcularCompraMinima() }} </h1>
+      
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Imagen</th>
+            <th>Nombre</th>
+            <th>Presentación</th>
+            <th>Precio en dólares</th>
+            <th>Precio en pesos sugerido</th>
+            <th>Precio mayorista</th>
+            <th>Cantidad</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="(producto, index) in productos" :key="index">
+            <td><img :src="producto.imagen" :alt="producto.nombre" class="producto-imagen"></td>
+            <td>{{ producto.nombre }}</td>
+            <td>{{ producto.presentacion }}</td>
+            <td>u$d {{ producto.precioDolares }}</td>
+            <td>$ {{ calcularPrecioPesos(producto.precioDolares) }}</td>
+            <td>$ {{ calcularPrecioMayorista(producto.precioDolares) }}</td>
+            <td>
+              <select v-model="producto.cantidad" @change="calcularTotalPedido">
+                <option v-for="cantidad in cantidades" :value="cantidad">{{ cantidad }}</option>
+              </select>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <h3>Total del pedido: $ {{ totalPedido }}</h3>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Datos de contacto</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
