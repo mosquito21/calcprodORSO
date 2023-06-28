@@ -12,56 +12,56 @@ new Vue({
         {
           imagen: 'images/mineral.JPG',
           nombre: 'Mineral',
-          presentacion: 'Presentación 2',
+          presentacion: '30ml',
           precioDolares: 6.00,
           cantidad: 0
         },
         {
             imagen: 'images/grasa.JPG',
             nombre: 'Grasa Grafito',
-            presentacion: 'Presentación 2',
+            presentacion: '60g',
             precioDolares: 8.00,
             cantidad: 0
           },
           {
             imagen: 'images/silicona.JPG',
             nombre: 'Silicona',
-            presentacion: 'Presentación 2',
+            presentacion: '30ml',
             precioDolares: 5.00,
             cantidad: 0
           },
           {
             imagen: 'images/cleaner.JPG',
             nombre: 'Cleaner',
-            presentacion: 'Presentación 2',
+            presentacion: '60ml',
             precioDolares: 6.00,
             cantidad: 0
           },
           {
             imagen: 'images/powergrip.JPG',
             nombre: 'Power Grip',
-            presentacion: 'Presentación 2',
+            presentacion: '125ml',
             precioDolares: 5.50,
             cantidad: 0
           },
           {
             imagen: 'images/optics.JPG',
             nombre: 'Optics',
-            presentacion: 'Presentación 2',
+            presentacion: '60ml',
             precioDolares: 5.00,
             cantidad: 0
           },
           {
             imagen: 'images/blade.JPG',
             nombre: 'Blade',
-            presentacion: 'Presentación 2',
+            presentacion: '30ml',
             precioDolares: 9.00,
             cantidad: 0
           },
           {
             imagen: 'images/reels.JPG',
             nombre: 'Reels',
-            presentacion: 'Presentación 2',
+            presentacion: '30ml',
             precioDolares: 9.00,
             cantidad: 0
           },
