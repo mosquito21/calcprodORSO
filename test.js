@@ -1,14 +1,12 @@
 
 
+fetch('http://escuderokevin.com.ar:7070/api/dolarblue')
+  
+  .then(response => response.json())
 
-    // Obtener el valor del dólar desde la API
-    fetch('http://escuderokevin.com.ar:7070/api/dolarblue')
-      .then(response => response.json())
-      .then(data => {
-        this.dolarVenta = parseFloat(data.venta);
-      })
-      .catch(error => {
-        console.error('Error al obtener el valor del dólar:', error);
-      });
+  .then(data => {
+    dolarVenta = parseFloat(data.venta);
+    
+  })
 
-console.log(this.dolarVenta)
+  console.log(dolarVenta)
