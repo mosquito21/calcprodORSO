@@ -97,14 +97,16 @@ new Vue({
     },
     mounted() {
        // Obtener el valor del dólar desde la API
-       fetch('http://escuderokevin.com.ar:7070/api/dolarblue')
-      .then(response => response.json())
-      .then(data => {
-        this.dolarVenta = parseFloat (data.venta);
-      })
-      .catch(error => {
-        console.error('Error al obtener el valor del dólar:', error);
-      });
+       fetch('https://www.dolarsi.com/api/api.php?type=valoresprincipales')
+       .then(response => response.json())
+       .then(data => {
+         const segundoObjeto = data[1].casa; // Acceder al segundo objeto del array y a la propiedad "casa"
+         this.dolarVenta = parseFloat(segundoObjeto.venta.replace(",", ".")); // Obtener el valor de "venta" y convertirlo a un número con punto decimal
+       })
+       .catch(error => {
+         console.error('Error al obtener el valor del dólar:', error);
+       });
+     
   }
 });
   
