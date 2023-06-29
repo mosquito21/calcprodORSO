@@ -18,8 +18,18 @@
 
   <main>
     <div id="app" class="container">
-      <h1>Productos <span class="subtitulo">Compra mínima Mayorista: $ {{ calcularCompraMinima() }} </h1>
-      <h2><span class="containerprecio">Precio Dolar: $ {{ dolarVenta }}</span></h2>
+      <div class="row">
+        <div class="col-12">
+          <h1 class="titulo-principal">Productos</h1>
+          <span class="subtitulo">Compra mínima Mayorista: $ {{ calcularCompraMinima() }}</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <h2 class="subtitulo2">Dolar: $ {{ dolarVenta }}</h2>
+        </div>
+      </div>
       <table class="table">
         <thead>
           <tr>
@@ -39,17 +49,22 @@
             <td>{{ producto.presentacion }}</td>
             <td>u$d {{ producto.precioDolares.toLocaleString('es-AR', { minimumFractionDigits: 2 }) }}</td>
             <td>$ {{ calcularPrecioPesos(producto.precioDolares)}}</td>
-            <<td>$ {{ calcularPrecioMayorista(producto.precioDolares).toLocaleString('es-AR', { minimumFractionDigits: 2 }) }}</td>
-            <td>
-              <select v-model="producto.cantidad" @change="calcularTotalPedido">
-                <option v-for="cantidad in cantidades" :value="cantidad">{{ cantidad }}</option>
-              </select>
-            </td>
+            <<td>$ {{ calcularPrecioMayorista(producto.precioDolares).toLocaleString('es-AR', { minimumFractionDigits: 2
+              }) }}</td>
+              <td>
+                <select v-model="producto.cantidad" @change="calcularTotalPedido">
+                  <option v-for="cantidad in cantidades" :value="cantidad">{{ cantidad }}</option>
+                </select>
+              </td>
           </tr>
         </tbody>
       </table>
 
-      <h3>Total del pedido: $ {{ totalPedido.toLocaleString('es-AR', { minimumFractionDigits: 2 }) }}</h3>
+      <div class="row">
+        <div class="col-12">
+          <h3>Total del pedido: $ {{ totalPedido.toLocaleString('es-AR', { minimumFractionDigits: 2 }) }}</h3>
+        </div>
+      </div>
     </div>
   </main>
 
