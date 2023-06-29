@@ -49,7 +49,7 @@
             <td>{{ producto.presentacion }}</td>
             <td>u$d {{ producto.precioDolares.toLocaleString('es-AR', { minimumFractionDigits: 2 }) }}</td>
             <td>$ {{ calcularPrecioPesos(producto.precioDolares)}}</td>
-            <<td>$ {{ calcularPrecioMayorista(producto.precioDolares).toLocaleString('es-AR', { minimumFractionDigits: 2
+            <td>$ {{ calcularPrecioMayorista(producto.precioDolares).toLocaleString('es-AR', { minimumFractionDigits: 2
               }) }}</td>
               <td>
                 <select v-model="producto.cantidad" @change="calcularTotalPedido">
