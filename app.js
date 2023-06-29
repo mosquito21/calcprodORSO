@@ -76,18 +76,17 @@ new Vue({
         for (let producto of this.productos) {
           total += producto.cantidad * this.calcularPrecioMayorista(producto.precioDolares);
         }
-        return total.toLocaleString("ES-AR",{
-			minimumFractionDigits: 2,
-		minimumFractionDigits: 2}
-		);
+        return total;
       }
     },
     methods: {
       calcularPrecioPesos: function(precioDolares) {
-        return (this.dolarVenta * precioDolares).toFixed(2);
+        return (this.dolarVenta * precioDolares).toLocaleString('es-AR', { minimumFractionDigits: 2 });
       },
       calcularPrecioMayorista: function(precioDolares) {
-        return (this.calcularPrecioPesos(precioDolares) * 0.7).toFixed(2); // 33% de descuento para precio mayorista
+        const precioPesos = this.dolarVenta * precioDolares;
+        const precioMayorista = precioPesos - (precioPesos * 0.33);
+        return precioMayorista;
       },
       calcularTotalPedido: function() {
         // Se calcula automáticamente a través de la propiedad computada 'totalPedido'
@@ -95,7 +94,8 @@ new Vue({
       calcularCompraMinima: function() {
         const valorDolares = 100;
         const valorPesos = this.calcularPrecioPesos(valorDolares);
-        return valorPesos.toLocaleString('es-AR');
+        return valorPesos;
+      
       }
     },
     mounted() {
