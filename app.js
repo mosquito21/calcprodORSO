@@ -27,7 +27,7 @@ new Vue({
             imagen: 'images/silicona.JPG',
             nombre: 'Silicona',
             presentacion: '30ml',
-            precioDolares: 5.00,
+            precioDolares: 4.60,
             cantidad: 0
           },
           {
