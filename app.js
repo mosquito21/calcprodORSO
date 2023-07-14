@@ -81,10 +81,10 @@ new Vue({
     },
     methods: {
       calcularPrecioPesos: function(precioDolares) {
-        return (this.dolarVenta * precioDolares).toLocaleString('es-AR', { minimumFractionDigits: 2 });
+        return ((this.dolarVenta * precioDolares)+500).toLocaleString('es-AR', { minimumFractionDigits: 2 });
       },
       calcularPrecioMayorista: function(precioDolares) {
-        const precioPesos = this.dolarVenta * precioDolares;
+        const precioPesos = (this.dolarVenta * precioDolares);
         const precioMayorista = precioPesos - (precioPesos * 0.33);
         return precioMayorista;
       },
