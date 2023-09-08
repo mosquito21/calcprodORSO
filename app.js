@@ -100,11 +100,11 @@ new Vue({
     },
     mounted() {
        // Obtener el valor del dólar desde la API
-       fetch('https://www.dolarsi.com/api/api.php?type=valoresprincipales')
+       fetch('https://dolarapi.com/v1/dolares')
        .then(response => response.json())
        .then(data => {
-         const segundoObjeto = data[1].casa; // Acceder al segundo objeto del array y a la propiedad "casa"
-         this.dolarVenta = parseFloat(segundoObjeto.venta.replace(",", ".")); // Obtener el valor de "venta" y convertirlo a un número con punto decimal
+         const segundoObjeto = data[1]; // Acceder al segundo objeto del array y a la propiedad "casa"
+         this.dolarVenta = parseFloat(segundoObjeto.venta); // Obtener el valor de "venta" y convertirlo a un número con punto decimal
        })
        .catch(error => {
          console.error('Error al obtener el valor del dólar:', error);
