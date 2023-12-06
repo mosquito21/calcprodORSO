@@ -92,7 +92,7 @@ new Vue({
         // Se calcula automáticamente a través de la propiedad computada 'totalPedido'
       },
       calcularCompraMinima: function() {
-        const valorDolares = 100;
+        const valorDolares = 75;
         const valorPesos = this.calcularPrecioPesos(valorDolares);
         return valorPesos;
       
