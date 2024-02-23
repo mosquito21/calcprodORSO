@@ -41,7 +41,7 @@ new Vue({
             imagen: 'images/powergrip.JPG',
             nombre: 'Power Grip',
             presentacion: '125ml',
-            precioDolares: 5.00,
+            precioDolares: 6.00,
             cantidad: 0
           },
           {
