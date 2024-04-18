@@ -17,12 +17,19 @@ new Vue({
           cantidad: 0
         },
         {
-            imagen: 'images/grasa.JPG',
+            imagen: 'images/Grasa60G.JPG',
             nombre: 'Grasa Grafito',
             presentacion: '60g',
             precioDolares: 8.00,
             cantidad: 0
           },
+        {
+          imagen: 'images/Grasa30G.JPG',
+          nombre: 'Grasa Grafito',
+          presentacion: '30g',
+          precioDolares: 4.5,
+          cantidad: 0
+        },
           {
             imagen: 'images/silicona.JPG',
             nombre: 'Silicona',
