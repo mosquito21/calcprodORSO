@@ -72,6 +72,13 @@ new Vue({
             precioDolares: 9.00,
             cantidad: 0
           },
+        {
+          imagen: 'images/Cepillobronce.JPG',
+          nombre: 'Cepillo para baquetas Bronce',
+          presentacion: '1uni',
+          precioDolares: 2.50,
+          cantidad: 0
+      },
         // ... Agregar los demás productos aquí
       ],
       dolarVenta: 0, // Valor del dólar obtenido de la API
