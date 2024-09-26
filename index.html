@@ -36,8 +36,8 @@
             <th>Imagen</th>
             <th>Nombre</th>
             <th>Presentación</th>
-            <!-- <th>Precio sugerido en dólares</th>
-            <th>Precio mostrador sugerido</th> -->
+            <!-- <th>Precio sugerido en dólares</th>-->
+            <th>Precio mostrador sugerido</th> 
             <th>Precio mayorista</th>
             <th>Cantidad</th>
           </tr>
@@ -47,7 +47,7 @@
             <td><img :src="producto.imagen" :alt="producto.nombre" class="producto-imagen"></td>
             <td>{{ producto.nombre }}</td>
             <td>{{ producto.presentacion }}</td>
-            <td>u$d {{ producto.precioDolares.toLocaleString('es-AR', { minimumFractionDigits: 2 }) }}</td>
+            <!-- <td>u$d {{ producto.precioDolares.toLocaleString('es-AR', { minimumFractionDigits: 2 }) }}</td> -->
             <td>$ {{ calcularPrecioPesos(producto.precioDolares)}}</td>
             <td>$ {{ calcularPrecioMayorista(producto.precioDolares).toLocaleString('es-AR', { minimumFractionDigits: 2
               }) }}</td>
