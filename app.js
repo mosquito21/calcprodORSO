@@ -4,14 +4,14 @@ new Vue({
       productos: [
         {
           imagen: 'images/sintetico.JPG',
-          nombre: 'Sintético',
+          nombre: 'Aceite sintético',
           presentacion: '30ml',
           precioDolares: 7.00,
           cantidad: 0
         },
         {
           imagen: 'images/mineral.JPG',
-          nombre: 'Mineral',
+          nombre: 'Aceite mineral',
           presentacion: '30ml',
           precioDolares: 6.00,
           cantidad: 0
@@ -32,14 +32,14 @@ new Vue({
         },
           {
             imagen: 'images/silicona.JPG',
-            nombre: 'Silicona',
+            nombre: 'Aceite de silicona',
             presentacion: '30ml',
             precioDolares: 4.60,
             cantidad: 0
           },
           {
             imagen: 'images/cleaner.JPG',
-            nombre: 'Cleaner',
+            nombre: 'Cleaner desengrasante',
             presentacion: '60ml',
             precioDolares: 6.00,
             cantidad: 0
@@ -76,7 +76,7 @@ new Vue({
           imagen: 'images/Cepillobronce.JPG',
           nombre: 'Cepillo para baquetas Bronce',
           presentacion: '1uni',
-          precioDolares: 2.50,
+          precioDolares: 2.80,
           cantidad: 0
       },
         // ... Agregar los demás productos aquí
