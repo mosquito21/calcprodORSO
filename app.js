@@ -6,7 +6,7 @@ new Vue({
           imagen: 'images/sintetico.JPG',
           nombre: 'Aceite sintético',
           presentacion: '30ml',
-          precioDolares: 7.00,
+          precioDolares: 7.50,
           cantidad: 0
         },
         {
