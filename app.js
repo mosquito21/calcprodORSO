@@ -13,7 +13,7 @@ new Vue({
           imagen: 'images/mineral.JPG',
           nombre: 'Aceite mineral',
           presentacion: '30ml',
-          precioDolares: 6.00,
+          precioDolares: 6.50,
           cantidad: 0
         },
         {
@@ -27,14 +27,14 @@ new Vue({
           imagen: 'images/Grasa30G.JPG',
           nombre: 'Grasa Grafito',
           presentacion: '30g',
-          precioDolares: 4.5,
+          precioDolares: 4.50,
           cantidad: 0
         },
           {
             imagen: 'images/silicona.JPG',
             nombre: 'Aceite de silicona',
             presentacion: '30ml',
-            precioDolares: 4.60,
+            precioDolares: 6.00,
             cantidad: 0
           },
           {
@@ -48,7 +48,7 @@ new Vue({
             imagen: 'images/powergrip.JPG',
             nombre: 'Power Grip',
             presentacion: '125ml',
-            precioDolares: 6.00,
+            precioDolares: 7.00,
             cantidad: 0
           },
           {
@@ -66,17 +66,17 @@ new Vue({
             cantidad: 0
           },
           {
-            imagen: 'images/reels.JPG',
-            nombre: 'Reels',
-            presentacion: '30ml',
-            precioDolares: 9.00,
+            imagen: 'images/kit3baquetas.JPG',
+            nombre: 'Baqueta alambre arma corta',
+            presentacion: '3uni',
+            precioDolares: 5.50,
             cantidad: 0
           },
         {
           imagen: 'images/Cepillobronce.JPG',
           nombre: 'Cepillo para baquetas Bronce',
           presentacion: '1uni',
-          precioDolares: 4.00,
+          precioDolares: 5.50,
           cantidad: 0
       },
         // ... Agregar los demás productos aquí
