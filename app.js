@@ -79,6 +79,20 @@ new Vue({
           precioDolares: 5.50,
           cantidad: 0
       },
+        {
+          imagen: 'images/Magnesio150.JPG',
+          nombre: 'Carbonato de magnesio 150grms',
+          presentacion: '1uni',
+          precioDolares: 5.50,
+          cantidad: 0
+        },
+        {
+          imagen: 'images/Magnesio250.JPG',
+          nombre: 'Carbonato de magnesio 250grms',
+          presentacion: '1uni',
+          precioDolares: 8.30,
+          cantidad: 0
+        },
         // ... Agregar los demás productos aquí
       ],
       dolarVenta: 0, // Valor del dólar obtenido de la API
