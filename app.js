@@ -81,15 +81,15 @@ new Vue({
       },
         {
           imagen: 'images/Magensio150.jpg',
-          nombre: 'Carbonato de magnesio 150grms',
-          presentacion: '1uni',
+          nombre: 'Carbonato de magnesio',
+          presentacion: '150g',
           precioDolares: 5.50,
           cantidad: 0
         },
         {
           imagen: 'images/Magnesio250.jpg',
-          nombre: 'Carbonato de magnesio 250grms',
-          presentacion: '1uni',
+          nombre: 'Carbonato de magnesio',
+          presentacion: '250g',
           precioDolares: 8.30,
           cantidad: 0
         },
