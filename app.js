@@ -131,7 +131,7 @@ new Vue({
        fetch('https://dolarapi.com/v1/dolares')
        .then(response => response.json())
        .then(data => {
-         const segundoObjeto = data[1]; // Acceder al segundo objeto del array y a la propiedad "casa"
+         const segundoObjeto = data[2]; // Acceder al segundo objeto del array y a la propiedad "casa"
          this.dolarVenta = parseFloat(segundoObjeto.venta); // Obtener el valor de "venta" y convertirlo a un número con punto decimal
        })
        .catch(error => {
