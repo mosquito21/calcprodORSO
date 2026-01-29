@@ -41,7 +41,7 @@ new Vue({
             imagen: 'images/cleaner.JPG',
             nombre: 'Cleaner desengrasante',
             presentacion: '60ml',
-            precioDolares: 6.00,
+            precioDolares: 5.00,
             cantidad: 0
           },
           {
@@ -81,14 +81,14 @@ new Vue({
       },
         {
           imagen: 'images/Magensio150.jpg',
-          nombre: 'Carbonato de magnesio sobre',
+          nombre: 'Carbonato de magnesio tarro',
           presentacion: '250g',
           precioDolares: 7.30,
           cantidad: 0
         },
         {
           imagen: 'images/Magnesio250.jpg',
-          nombre: 'Carbonato de magnesio tarro',
+          nombre: 'Carbonato de magnesio sobre',
           presentacion: '250g',
           precioDolares: 6.00,
           cantidad: 0
