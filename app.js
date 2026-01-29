@@ -111,7 +111,7 @@ new Vue({
           imagen: 'images/limpiadoraerosol.jpg',
           nombre: 'Limpiador cleaner aerosol',
           presentacion: '250cm3',
-          precioDolares: 9,
+          precioDolares: 8.8,
           cantidad: 0
         },
         // ... Agregar los demás productos aquí
