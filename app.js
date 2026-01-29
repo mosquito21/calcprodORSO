@@ -83,14 +83,14 @@ new Vue({
           imagen: 'images/Magensio150.jpg',
           nombre: 'Carbonato de magnesio tarro',
           presentacion: '250g',
-          precioDolares: 7.30,
+          precioDolares: 12.00,
           cantidad: 0
         },
         {
           imagen: 'images/Magnesio250.jpg',
           nombre: 'Carbonato de magnesio sobre',
           presentacion: '250g',
-          precioDolares: 6.00,
+          precioDolares: 7.30,
           cantidad: 0
         },
         {
