@@ -82,8 +82,8 @@ new Vue({
         {
           imagen: 'images/Magensio150.jpg',
           nombre: 'Carbonato de magnesio',
-          presentacion: '150g',
-          precioDolares: 5.50,
+          presentacion: '250g',
+          precioDolares: 7.30,
           cantidad: 0
         },
         {
@@ -91,6 +91,27 @@ new Vue({
           nombre: 'Carbonato de magnesio',
           presentacion: '250g',
           precioDolares: 8.30,
+          cantidad: 0
+        },
+        {
+          imagen: 'images/magnesio1kg.jpg',
+          nombre: 'Carbonato de magnesio',
+          presentacion: '1kg',
+          precioDolares: 34.00,
+          cantidad: 0
+        },
+        {
+          imagen: 'images/aceiteteflonadoaerosol.jpg',
+          nombre: 'Aceite teflonado aerosol',
+          presentacion: '250cm3',
+          precioDolares: 14.00,
+          cantidad: 0
+        },
+        {
+          imagen: 'images/limpiadoraerosol.jpg',
+          nombre: 'Limpiador cleaner aerosol',
+          presentacion: '250cm3',
+          precioDolares: 13.50,
           cantidad: 0
         },
         // ... Agregar los demás productos aquí
