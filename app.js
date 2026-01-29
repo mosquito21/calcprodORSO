@@ -104,7 +104,7 @@ new Vue({
           imagen: 'images/aceiteteflonadoaerosol.jpg',
           nombre: 'Aceite teflonado aerosol',
           presentacion: '250cm3',
-          precioDolares: 8.1,
+          precioDolares: 9.7,
           cantidad: 0
         },
         {
