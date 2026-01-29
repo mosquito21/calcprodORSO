@@ -104,14 +104,14 @@ new Vue({
           imagen: 'images/aceiteteflonadoaerosol.jpg',
           nombre: 'Aceite teflonado aerosol',
           presentacion: '250cm3',
-          precioDolares: 14.00,
+          precioDolares: 13.10,
           cantidad: 0
         },
         {
           imagen: 'images/limpiadoraerosol.jpg',
           nombre: 'Limpiador cleaner aerosol',
           presentacion: '250cm3',
-          precioDolares: 13.50,
+          precioDolares: 12.10,
           cantidad: 0
         },
         // ... Agregar los demás productos aquí
