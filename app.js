@@ -95,9 +95,9 @@ new Vue({
         },
         {
           imagen: 'images/magnesio1kg.jpg',
-          nombre: 'Carbonato de magnesio',
+          nombre: 'Carbonato de magnesio balde',
           presentacion: '1kg',
-          precioDolares: 20.5,
+          precioDolares: 34.0,
           cantidad: 0
         },
         {
